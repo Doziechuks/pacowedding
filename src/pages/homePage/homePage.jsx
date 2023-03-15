@@ -2,6 +2,7 @@ import classes from './homePage.module.css';
 
 import Header from '../../components/header/header.component';
 import Couple from '../../components/couple/couple.component';
+import CustomButton from '../../components/customButton/customButton.component';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         blanditiis numquam?"
       />
       <Couple />
+      <CustomButton>i will attend</CustomButton>
     </section>
   );
 }
