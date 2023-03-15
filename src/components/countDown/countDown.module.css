@@ -20,3 +20,12 @@
   align-items: center;
   gap: 2rem;
 }
+
+@media screen and (max-width: 650px) {
+  .title{
+    font-size: 1.8rem;
+  }
+  .container{
+    padding: 0 1rem;
+  }
+}
