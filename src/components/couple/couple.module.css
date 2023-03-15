@@ -1,0 +1,21 @@
+.wrapper {
+  border: 1px red solid;
+  width: 100%;
+}
+.photoBox {
+  width: 100%;
+  max-width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.3);
+  background-color: #fad7133a;
+}
+.couple{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transform: translate(5%, 5%);
+  object-fit: cover;
+}

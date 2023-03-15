@@ -1,6 +1,7 @@
 import classes from './homePage.module.css';
 
 import Header from '../../components/header/header.component';
+import Couple from '../../components/couple/couple.component';
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
         explicabo quisquam ratione officia exercitationem fuga cupiditate odio
         blanditiis numquam?"
       />
+      <Couple />
     </section>
   );
 }
