@@ -3,8 +3,12 @@ import classes from './homePage.module.css';
 import Header from '../../components/header/header.component';
 import Couple from '../../components/couple/couple.component';
 import CustomButton from '../../components/customButton/customButton.component';
+import FormField from '../../components/formFields/formField.component';
 
-const HomePage = () => {
+import { connect } from 'react-redux';
+import { handleToggleButton } from '../../redux/toggle/action';
+
+const HomePage = ({ setToggle }) => {
   return (
     <section className={classes.wrapper}>
       <Header
@@ -14,9 +18,14 @@ const HomePage = () => {
         blanditiis numquam?"
       />
       <Couple />
-      <CustomButton>i will attend</CustomButton>
+      <CustomButton onClick={() => setToggle()}>i will attend</CustomButton>
+      <FormField />
     </section>
   );
 }
  
-export default HomePage;
+const mapDispatchToProps = (dispatch) => ({
+  setToggle: () => dispatch(handleToggleButton())
+});
+
+export default connect(null,mapDispatchToProps)(HomePage);

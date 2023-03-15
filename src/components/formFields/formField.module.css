@@ -1,0 +1,18 @@
+.wrapper{
+  border: 1px red solid;
+  width: 100%;
+  max-width: 20rem;
+  height: 25rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  transition: all 1s ease-in-out;
+}
+.show{
+  display: block;
+}
