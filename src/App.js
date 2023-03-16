@@ -12,6 +12,8 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/adminpaco" component={PacoPage} />
       </Switch>
+
+      <p className={classes.copyRight}>&copy; copyright 2023, built by Chuka</p>
     </div>
   );
 }

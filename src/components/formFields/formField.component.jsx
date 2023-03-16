@@ -16,7 +16,7 @@ const FormField = ({ toggle, setToggle }) => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState('');
   const [present, setPresent] = useState(true);
-  const [checked, setChecked] = useState('i will not attend');
+  const [checked, setChecked] = useState('no');
   const [error, setError] = useState(false);
 
   const handleName = (e) => {
@@ -29,9 +29,9 @@ const FormField = ({ toggle, setToggle }) => {
   const handleCheckBox = () => {
     setPresent(!present);
     if(present === true){
-      setChecked('I will be there')
+      setChecked('yes')
     }else{
-      setChecked('I will not be there')
+      setChecked('no')
     }
   }
 
