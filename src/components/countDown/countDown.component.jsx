@@ -12,7 +12,7 @@ const CounDown = () => {
   let interval;
 
   const handleTimer = () => {
-    const weddingDate = new Date("april 25, 2023 00:00:00").getTime();
+    const weddingDate = new Date("april 22, 2023 00:00:00").getTime();
 
     interval = setInterval(() => {
       const currentDate = new Date().getTime();

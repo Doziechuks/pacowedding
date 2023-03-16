@@ -15,9 +15,7 @@ const HomePage = ({ toggle, setToggle }) => {
     <section className={classes.wrapper}>
       <Header
         title="PACO 2023"
-        info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore
-        explicabo quisquam ratione officia exercitationem fuga cupiditate odio
-        blanditiis numquam?"
+        info="Hurray! it's PACO 2023. I and my dear wife Confidence wish to cordially invite you to our wedding come 22nd of April, 2023. We would so highly apprecite your presence. Please, kindly do us a favour by clicking the button at the bottom, to indicate your interest in being present at this great celebration of love"
       />
       <Couple />
       <CustomButton onClick={() => setToggle()}>{toggle ? 'remove form' :'i will attend'}</CustomButton>
