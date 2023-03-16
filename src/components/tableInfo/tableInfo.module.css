@@ -1,0 +1,29 @@
+.wrapper {
+  border: 1px #030362d9 solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.serialNum,
+.name,
+.phone,
+.checked {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  color: #030362d9;
+  border: 1px #030362d9 solid;
+}
+.serialNum {
+  flex: 0.4;
+}
+.name {
+  flex: 1.5;
+}
+.phone {
+  flex: 0.8;
+}
+.checked {
+  flex: 0.8;
+}

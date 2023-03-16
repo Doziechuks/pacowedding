@@ -1,0 +1,62 @@
+.wrapper {
+  border: 1px red solid;
+  width: 100%;
+}
+.wrapper h1{
+  border: 1px red solid;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #030362d9;
+}
+.container{
+  border: 1px #030362d9 solid;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.heading{
+  border: 1px #030362d9 solid;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.serialNum,.name,.phone,.checked{
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem 0;
+  color: #030362d9;
+}
+.serialNum{
+  border: 1px #030362d9 solid;
+  flex: 0.4;
+}
+.name{
+  border: 1px #030362d9 solid;
+  flex: 1.5;
+}
+.phone{
+  border: 1px #030362d9 solid;
+  flex: 0.8;
+}
+.checked{
+  border: 1px #030362d9 solid;
+  flex: 0.8;
+}
+@media screen and (max-width: 650px) {
+  .wrapper{
+    padding: 0 1rem;
+  }
+  .wrapper h1{
+    font-size: 2rem;
+  }
+  .container{
+    max-width: 100%;
+  }
+  .serialNum,.name,.phone,.checked{
+  font-size: 0.8rem;
+}
+}
