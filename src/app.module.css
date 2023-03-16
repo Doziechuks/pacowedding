@@ -14,7 +14,7 @@
 body{
   width: 100%;
 }
-.App{
+.app{
   width: 100%;
   min-height: 100vh;
   display: flex;
