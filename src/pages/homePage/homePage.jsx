@@ -7,8 +7,10 @@ import FormField from '../../components/formFields/formField.component';
 
 import { connect } from 'react-redux';
 import { handleToggleButton } from '../../redux/toggle/action';
+import { createStructuredSelector } from 'reselect';
+import { selectToggleButton } from '../../redux/toggle/toggleSelector';
 
-const HomePage = ({ setToggle }) => {
+const HomePage = ({ toggle, setToggle }) => {
   return (
     <section className={classes.wrapper}>
       <Header
@@ -18,14 +20,18 @@ const HomePage = ({ setToggle }) => {
         blanditiis numquam?"
       />
       <Couple />
-      <CustomButton onClick={() => setToggle()}>i will attend</CustomButton>
+      <CustomButton onClick={() => setToggle()}>{toggle ? 'remove form' :'i will attend'}</CustomButton>
       <FormField />
     </section>
   );
 }
  
+const mapStateToProps = createStructuredSelector({
+  toggle: selectToggleButton
+});
+
 const mapDispatchToProps = (dispatch) => ({
   setToggle: () => dispatch(handleToggleButton())
 });
 
-export default connect(null,mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps,mapDispatchToProps)(HomePage);
