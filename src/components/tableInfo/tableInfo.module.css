@@ -9,21 +9,36 @@
 .name,
 .phone,
 .checked {
+  width: 100%;
+  max-width: 15rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: capitalize;
-  padding: 1rem 0;
   color: #030362d9;
   border: 1px #030362d9 solid;
 }
-.serialNum {
-  flex: 0.4;
+
+@media screen and (max-width: 650px) {
+  .container{
+    max-width: 100%;
+  }
+  .serialNum{
+    font-size: 0.8rem;
+    max-width: 8%;
+  }
+  .name{
+    font-size: 0.8rem;
+    max-width: 42%;
+  }
+  .phone{
+    font-size: 0.8rem;
+    max-width: 35%;
+  }
+  .checked{
+  font-size: 0.8rem;
+  max-width: 15%;
 }
-.name {
-  flex: 1.5;
-}
-.phone {
-  flex: 0.8;
-}
-.checked {
-  flex: 0.8;
 }
