@@ -31,6 +31,12 @@
   width: 100%;
   max-width: 15rem;
 }
+.noInterest{
+  text-transform: uppercase;
+  color: #030362d9;
+  font-size: 3rem;
+  text-align: center;
+}
 @media screen and (max-width: 650px) {
   .wrapper{
     padding: 0 1rem;
