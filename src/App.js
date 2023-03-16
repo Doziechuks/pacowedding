@@ -1,4 +1,4 @@
-import classes from './app.css'
+import classes from './app.module.css'
 
 import HomePage from './pages/homePage/homePage';
 import PacoPage from './pages/pacoPage/pacoPage';
